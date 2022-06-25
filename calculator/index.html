@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container" name="calc">
+            <form action="" class="calculator" name="calc">
+                <input type="text" readonly class="value" name="txt" />
+                <span class="num">7</span>
+                <span class="num">8</span>
+                <span class="num">9</span>
+                <span class="num">*</span>
+                <span class="num clear">C</span>
+                <span class="num">4</span>
+                <span class="num">5</span>
+                <span class="num">6</span>
+                <span class="num">/</span>
+                <span class="num"><i class="fas fa-backspace"> </i></span>
+                <span class="num">3</span>
+                <span class="num">2</span>
+                <span class="num">1</span>
+                <span class="num">-</span>
+                <span class="num">MR</span>
+                <span class="num">M</span>
+                <span class="num">0</span>
+                <span class="num equal">=</span>
+                <span class="num">+</span>
+                <span class="num">MS</span>
+            </form>
+        </div>
+        <p style="position: absolute; color: white; bottom: 20px; z-index: 1">
+            <span>Made with</span>
+            <i class="fas fa-heart" style="color: rgb(133, 33, 33)"></i> by
+            <a
+                href="https://ibnabdulatif.netlify.app"
+                target="_blank"
+                style="color: #191919"
+                >ibn Abdulatif</a
+            >
+        </p>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".container"), {
+                max: 15,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.1,
+            });
+        </script>
+    </body>
+</html>
